@@ -1,0 +1,4 @@
+[SERWERY]
+node1 ansible_host=135.181.194.175 ansible_user=root
+node2 ansible_host=37.27.32.146 ansible_user=root
+node3 ansible_host=65.108.156.34 ansible_user=root

@@ -1,0 +1,21 @@
+# - name: Pierwszy playbook
+#   hosts: all
+#   tasks:
+#     - name: Pingowanie hostów
+#       ping:
+
+# - name: Example from an Ansible Playbook
+#   hosts: all
+#   ansible.builtin.ping:
+#   tasks:
+#     - name: Pingowanie hostow
+#       ping: 
+
+- name: Example from an Ansible Playbook
+  hosts: all
+  tasks:
+    - name: Ping hosts
+      ansible.builtin.ping:
+    - name: Restart servers
+      ansible.builtin.reboot:
+
