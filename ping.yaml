@@ -18,7 +18,7 @@
       ansible.builtin.ping:
     - name: Restart servers
       ansible.builtin.reboot:
-- name: Create a new user
+    - name: Create a new user
       ansible.builtin.user:
         name: nowy_uzytkownik
         state: present
@@ -26,7 +26,7 @@
         password: "{{ 'nowe_haslo' | password_hash('sha512') }}"
         createhome: yes
     
-- name: Change the user's password at first login
+    - name: Change the user's password at first login
       ansible.builtin.user:
         name: nowy_uzytkownik
         update_password: always
